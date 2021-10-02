@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-02T09:15:12.419Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="NGVKHd9yIC-GqbsPisPd" version="15.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-02T09:36:42.066Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="9JJ-xfBALeHnxhhpxfly" version="15.4.1" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="981" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="677" dy="378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -54,6 +54,25 @@
         <mxCell id="FkkBARwxHouPMtYrCwP6-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="FkkBARwxHouPMtYrCwP6-1">
           <mxGeometry x="45" y="80" width="10" height="530" as="geometry" />
         </mxCell>
+        <mxCell id="FkkBARwxHouPMtYrCwP6-14" value="Attempts to contact the Authentication&amp;nbsp;&lt;br&gt;Service to verify if the user is&amp;nbsp;&lt;br&gt;authorized to comission device and &lt;br&gt;returns the access and refresh token" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=-0.255;entryY=0.339;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="FkkBARwxHouPMtYrCwP6-1" target="FkkBARwxHouPMtYrCwP6-13">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="55" y="260" as="sourcePoint" />
+            <mxPoint x="135" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkkBARwxHouPMtYrCwP6-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="FkkBARwxHouPMtYrCwP6-1">
+          <mxGeometry x="45" y="380" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FkkBARwxHouPMtYrCwP6-19" value="Associates the Refresh Token and&amp;nbsp;&lt;br&gt;Access Token with HMAC Key" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.086;exitY=0.526;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="FkkBARwxHouPMtYrCwP6-18" parent="FkkBARwxHouPMtYrCwP6-1" source="FkkBARwxHouPMtYrCwP6-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="360" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="56" y="360" />
+              <mxPoint x="80" y="360" />
+              <mxPoint x="80" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="FkkBARwxHouPMtYrCwP6-3" value="Shows Login Page to &#xa;User " style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1">
           <mxGeometry x="-0.0309" relative="1" as="geometry">
             <mxPoint x="160" y="190" as="sourcePoint" />
@@ -91,6 +110,12 @@
         </mxCell>
         <mxCell id="FkkBARwxHouPMtYrCwP6-13" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="FkkBARwxHouPMtYrCwP6-12">
           <mxGeometry x="45" y="80" width="10" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="FkkBARwxHouPMtYrCwP6-15" value="Returns the access and refresh token&lt;br&gt;to be associated with HMAC key" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=-0.186;exitY=0.46;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.121;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FkkBARwxHouPMtYrCwP6-13" target="FkkBARwxHouPMtYrCwP6-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="580" y="410" as="sourcePoint" />
+            <mxPoint x="610" y="404" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
