@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-03T07:55:06.427Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="44sduFdfLo7KGkBsLHu9" version="15.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-03T09:10:45.392Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="Ji2djzZL5Dws5Cwz0seD" version="15.4.1" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="569" dy="318" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,6 +15,12 @@
             <mxPoint x="-90" y="70" as="sourcePoint" />
             <mxPoint as="offset" />
             <mxPoint x="30" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSdL3xvWTVV-aOGhaE8s-8" value="Encrypts the message using the HMAC&lt;br&gt;shared during the registration" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=10;edgeStyle=orthogonalEdgeStyle;entryX=0.4;entryY=0.387;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="3nuBFxr9cyL0pnOWT2aG-1" target="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="60" y="480" as="sourcePoint" />
+            <mxPoint x="140" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value="Edge Connector" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
@@ -139,6 +145,13 @@
             <Array as="points">
               <mxPoint x="450" y="500" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSdL3xvWTVV-aOGhaE8s-7" value="Interface to Initiate&#xa; Data Transfer" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry x="0.037" relative="1" as="geometry">
+            <mxPoint x="30" y="560" as="sourcePoint" />
+            <mxPoint x="150" y="560" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
