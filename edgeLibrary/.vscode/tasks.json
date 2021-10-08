@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Build Main",
+                "type": "shell",
+                "command": "chmod +x build.sh && ./build.sh",
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ]
+            }
+        ]
+}
