@@ -9,6 +9,9 @@ list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/ExternalLibs/Modules")
 find_package(libcrypto++)
 add_subdirectory(googletest)
 
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Network REQUIRED)
+
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set (INC_DIRS src/hmac)
