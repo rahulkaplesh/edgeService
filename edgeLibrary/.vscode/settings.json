@@ -54,6 +54,7 @@
         "iomanip": "cpp",
         "bit": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "qobject": "cpp"
     },
 }
