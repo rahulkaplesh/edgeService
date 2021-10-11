@@ -34,7 +34,8 @@ target_include_directories(edge_connector_library PUBLIC ${INC_DIRS})
 target_link_libraries(edge_connector_library PUBLIC ssl crypto++ Qt5::Core Qt5::Network)
 
 set(TEST_SRC test.cpp
-             test/hmac/hmac_test.cpp)
+             test/hmac/hmac_test.cpp
+             test/restmanager/restmanager_test.cpp)
 
 add_executable(lib_test ${TEST_SRC})
 
