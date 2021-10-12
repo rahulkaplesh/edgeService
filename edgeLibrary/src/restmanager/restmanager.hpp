@@ -21,8 +21,10 @@ namespace EDGE_CONNECTOR_LIBRARY {
         public:
             RESTManager(QObject *parent = nullptr);
             void setEndPoint(QString &aEndpoint);
-            void postDataToRoute(QString& aRoute, QByteArray& aDataToPost);
-            virtual ~RESTManager();
+            void postDataToRoute(QString& aRoute,
+                QByteArray& aDataToPost,
+                std::function<void(QNetworkReply*)> successHandler = std::function<void(QNetworkReply*)>(nullptr),
+                std::function<void(QNetworkReply*)> errorHandler = std::function<void(QNetworkReply*)>(nullptr));
     };
 }
 

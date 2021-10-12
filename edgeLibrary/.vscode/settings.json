@@ -55,6 +55,7 @@
         "bit": "cpp",
         "numeric": "cpp",
         "random": "cpp",
-        "qobject": "cpp"
+        "qobject": "cpp",
+        "qcoreapplication": "cpp"
     },
 }
