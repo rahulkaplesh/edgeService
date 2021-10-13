@@ -26,17 +26,19 @@ int main(int argc, char **argv) {
 
     QCoreApplication app(argc, argv);
 
-    std::unique_ptr<QThread> pGTest(QThread::create(ExecuteGTest));
-        pGTest->start();
+    //std::unique_ptr<QThread> pGTest(QThread::create(ExecuteGTest));
+    //pGTest->start();
 
-    const int iGTestRes = app.exec();
-    bool bIsRunning = pGTest->isRunning();
-    if (bIsRunning)
-    {
-        //GTest thread is still running =>should not been happening....requesting exit
-        //Request exit with error code
-        pGTest->exit(-1);
-        pGTest->wait();
-    }
-    return iGTestRes;
+    //const int iGTestRes = app.exec();
+    //bool bIsRunning = pGTest->isRunning();
+    //if (bIsRunning)
+    //{
+    //    //GTest thread is still running =>should not been happening....requesting exit
+    //    //Request exit with error code
+    //    pGTest->exit(-1);
+    //    pGTest->wait();
+    //}
+    //return iGTestRes;
+    const int iRes = RUN_ALL_TESTS();
+    app.exec();
 }

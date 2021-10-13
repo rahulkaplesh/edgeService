@@ -25,6 +25,8 @@ namespace EDGE_CONNECTOR_LIBRARY {
                 QByteArray& aDataToPost,
                 std::function<void(QNetworkReply*)> successHandler = std::function<void(QNetworkReply*)>(nullptr),
                 std::function<void(QNetworkReply*)> errorHandler = std::function<void(QNetworkReply*)>(nullptr));
+        public slots:
+            void replyRecieved();
     };
 }
 
