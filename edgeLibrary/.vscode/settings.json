@@ -56,6 +56,12 @@
         "numeric": "cpp",
         "random": "cpp",
         "qobject": "cpp",
-        "qcoreapplication": "cpp"
+        "qcoreapplication": "cpp",
+        "qnetworkrequest": "cpp",
+        "condition_variable": "cpp",
+        "cstring": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "thread": "cpp"
     },
 }

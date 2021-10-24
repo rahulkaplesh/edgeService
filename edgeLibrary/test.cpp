@@ -3,7 +3,6 @@
  * correctly.
  ************************************************************************************/ 
 #include "gtest/gtest.h"
-#include "QtCore/QCoreApplication"
 #include "QtCore/QThread"
 
 static void ExecuteGTest()
@@ -24,8 +23,6 @@ static void ExecuteGTest()
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
 
-    QCoreApplication app(argc, argv);
-
     //std::unique_ptr<QThread> pGTest(QThread::create(ExecuteGTest));
     //pGTest->start();
 
@@ -39,6 +36,6 @@ int main(int argc, char **argv) {
     //    pGTest->wait();
     //}
     //return iGTestRes;
-    const int iRes = RUN_ALL_TESTS();
-    app.exec();
+    //ExecuteGTest();
+    RUN_ALL_TESTS();
 }

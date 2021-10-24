@@ -12,12 +12,15 @@
 #include "QtNetwork/QNetworkRequest"
 #include "QtNetwork/QNetworkReply"
 #include "QtCore/QJsonObject"
+#include "QtCore/QEventLoop"
 
 namespace EDGE_CONNECTOR_LIBRARY {
     class RESTManager: public QObject {
             Q_OBJECT;
             QNetworkAccessManager *mNetworkAccessManager;
             QString mEndpoint;
+            QNetworkReply *reply;
+            std::function<void(QNetworkReply*)> mSuccessHandler;
         public:
             RESTManager(QObject *parent = nullptr);
             void setEndPoint(QString &aEndpoint);

@@ -47,9 +47,13 @@ void RESTManager::postDataToRoute(QString& aRoute,
         request.setUrl(url);
         request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
-        QNetworkReply *reply = mNetworkAccessManager->post(request, aDataToPost);
+        if (successHandler)
+        {
+            mSuccessHandler = successHandler;
+        }
 
-        connect(reply, &QNetworkReply::finished, this, &RESTManager::replyRecieved);
+        reply = mNetworkAccessManager->post(request, aDataToPost);        
+        connect(reply, &QNetworkReply::readyRead, this, &RESTManager::replyRecieved);
 
         std::cout << "Sending Data to : " << url.toString().toStdString() << std::endl;
     }
@@ -66,6 +70,7 @@ void RESTManager::replyRecieved()
         qDebug() << "Error getting the reply" << reply->errorString();
         return;
     }
-    reply->deleteLater();
     qDebug() << "Response : " << reply->readAll();
+    //mSuccessHandler();
+    reply->deleteLater();    
 }

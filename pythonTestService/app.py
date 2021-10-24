@@ -1,5 +1,4 @@
 from flask import Flask, json, request
-from flask.ctx import RequestContext
 
 app = Flask(__name__)
 
