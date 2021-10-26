@@ -9,8 +9,10 @@
 using namespace EDGE_CONNECTOR_LIBRARY;
 
 TEST(RestManagerTest, APP_USAGE) {
-    QCoreApplication app;
-    RESTManager manager(app);
+    int argc = 1;
+    char **argv;
+    QCoreApplication app(argc, argv);
+    RESTManager manager(&app);
     QString endPoint = "http://127.0.0.1:5200";
     manager.setEndPoint(endPoint);
     QJsonObject dataToPost;
@@ -18,6 +20,8 @@ TEST(RestManagerTest, APP_USAGE) {
     QJsonDocument doc(dataToPost);
     QString route = "/data";
     QByteArray data = doc.toJson();
-    manager.postDataToRoute(route, data);
-    
+    manager.postDataToRoute(route, data, [](QNetworkReply* reply){
+        QCoreApplication::exit(0);
+    });
+    app.exec();
 }

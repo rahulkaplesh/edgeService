@@ -16,7 +16,6 @@ static void ExecuteGTest()
     }
     const int iRes = RUN_ALL_TESTS();
     //terminate the Qt Eventloop and return GTest Result
-    QCoreApplication::exit(iRes);
 }
 
 

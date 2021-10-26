@@ -71,6 +71,8 @@ void RESTManager::replyRecieved()
         return;
     }
     qDebug() << "Response : " << reply->readAll();
-    //mSuccessHandler();
+    if (mSuccessHandler) {
+        mSuccessHandler(reply);
+    }
     reply->deleteLater();    
 }
